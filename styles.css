@@ -1,0 +1,141 @@
+:root {
+  --sm: 600px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --primary: #ece7e1;
+  --black: #1a1818;
+  --pastel-blue: #d5d5d5;
+  --pastel-brown: #bfa48d;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", san-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: var(--primary);
+  color: var(--black);
+}
+footer {
+  padding: 1rem 0;
+  background-color: var(--black);
+  color: var(--primary);
+}
+
+.navbar {
+  width: 100%;
+  max-width: var(--lg);
+  margin: auto;
+  /* color: rgba(256, 256, 256, 0.8); */
+  position: sticky;
+  top: 10px;
+  border-radius: 0.5rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar > ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1rem 0;
+}
+.navbar > ul > li {
+  flex: 1;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+.section {
+  /* min-height: 100vh; */
+  padding: 30px;
+  width: 100%;
+  max-width: var(--lg);
+  margin: auto;
+}
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  min-height: 100vh;
+}
+.first-section-image {
+  padding: 0px 15px 10px 30px;
+  background-color: var(--pastel-blue);
+  /* fil */
+}
+.second-section {
+  background-color: var(--pastel-brown);
+  color: var(--black);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.second-section > p {
+  font-size: 32px;
+  font-weight: semi-bold;
+  /* color: white; */
+  text-decoration: underline;
+  font-style: italic;
+}
+.second-section > h1 {
+  font-size: 16px;
+  font-style: italic;
+  /* color: #4a4a4a; */
+  font-weight: semi-bold;
+}
+.third-section {
+  background-color: var(--pastel-blue);
+  margin: 7rem auto;
+}
+.third-section > h1 {
+  margin-top: 2rem;
+  font-size: 32px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.projects-card {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+/* .fourth-section > h1 {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 32px;
+} */
+
+footer > div {
+  display: flex;
+  width: 100%;
+  max-width: var(--lg);
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+footer > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer > div > div > img {
+  filter: invert(100%);
+}
